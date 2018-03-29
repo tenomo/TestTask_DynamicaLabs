@@ -10,6 +10,8 @@ namespace DynamicaLabsTT
     {
         static void Main(string[] args)
         {
+            HubSpotClient client = new HubSpotClient();
+           var x = client.GetUpdatedContacts().Result;
         }
     }
 }
