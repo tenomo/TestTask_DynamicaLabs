@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace DynamicaLabsTT
 {
@@ -14,7 +16,7 @@ namespace DynamicaLabsTT
             var httpClient = new HttpClient();
   
         
-          var contactsResponseJson = await httpClient.GetStringAsync("https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=demo&count=10&property=lastname&property=lifecyclestage&property=firstname&property=company&property=associatedcompanyid");
+          var contactsResponseJson = await httpClient.GetStringAsync("https://api.hubapi.com/contacts/v1/lists/all/contacts/all?hapikey=demo&count=5&property=lastname&property=lifecyclestage&property=firstname&property=company&property=associatedcompanyid");
 
            
               var contactsResponse = await Task.Run(() =>  JsonConvert.DeserializeObject<dynamic>(contactsResponseJson));
@@ -55,10 +57,12 @@ namespace DynamicaLabsTT
                 var companiesResponse = await Task.Run(() => JsonConvert.DeserializeObject<dynamic>(companiesResponseJson));
                 Console.WriteLine("associated_company");
                 // Console.WriteLine(companiesResponse.properties);
+               
+//                Console.WriteLine((companiesResponse.propertiesas as JArray).Children().? "name not contains value" : "work");
 
                 try
                 {
-                    Console.WriteLine(companiesResponse.properties.name.value);
+                    Console.WriteLine(companiesResponse.properties["name"].value);
                 }
                 catch (Exception ex)
                 {

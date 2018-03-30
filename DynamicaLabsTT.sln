@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicaLabsTT", "DynamicaLabsTT\DynamicaLabsTT.csproj", "{D4F1141D-4159-4FDC-9CDD-A6D56459B6D9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HubSportService", "HubSportService\HubSportService.csproj", "{AD596613-1551-4551-A6F8-FE295EAA09D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelService", "ExcelService\ExcelService.csproj", "{521A4229-C602-4BC1-A95C-BA9DB9FACD50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicaLabsTT.UI", "DynamicaLabsTT.UI\DynamicaLabsTT.UI.csproj", "{C53FAC0A-0D65-480F-A5E2-66A67C1965E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D4F1141D-4159-4FDC-9CDD-A6D56459B6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4F1141D-4159-4FDC-9CDD-A6D56459B6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4F1141D-4159-4FDC-9CDD-A6D56459B6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4F1141D-4159-4FDC-9CDD-A6D56459B6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD596613-1551-4551-A6F8-FE295EAA09D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AD596613-1551-4551-A6F8-FE295EAA09D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD596613-1551-4551-A6F8-FE295EAA09D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD596613-1551-4551-A6F8-FE295EAA09D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521A4229-C602-4BC1-A95C-BA9DB9FACD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521A4229-C602-4BC1-A95C-BA9DB9FACD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521A4229-C602-4BC1-A95C-BA9DB9FACD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521A4229-C602-4BC1-A95C-BA9DB9FACD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53FAC0A-0D65-480F-A5E2-66A67C1965E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53FAC0A-0D65-480F-A5E2-66A67C1965E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53FAC0A-0D65-480F-A5E2-66A67C1965E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53FAC0A-0D65-480F-A5E2-66A67C1965E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

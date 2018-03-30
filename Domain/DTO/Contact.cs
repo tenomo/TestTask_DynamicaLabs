@@ -1,4 +1,4 @@
-﻿namespace HubSportService.DTO
+﻿namespace Domain.DTO
 {
    public class Contact
     {
